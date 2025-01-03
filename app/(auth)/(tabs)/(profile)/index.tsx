@@ -10,6 +10,7 @@ import { ALERT_TYPE, AlertNotificationRoot, Dialog } from 'react-native-alert-no
 import Header from './../../../../components/Header';
 import { userData } from './../../../..//components/home/CustomContent';
 import { CusText } from './../../../../components/CusText';
+import { handleLogout } from './../../../..//components/home/CustomContent';
 
 export default function Page() {
   const [password, setPassword] = useState('');
@@ -199,10 +200,12 @@ export default function Page() {
               </TouchableOpacity>
             )}
 
-            <TouchableOpacity style={styles.secBtn} onPress={() => {}}>
-              <Text fontFamily={'ArialB'} color={colors.white}>
+            <TouchableOpacity style={styles.secBtn} onPress={handleLogout}>
+              
+              <Text fontFamily={'ArialB'} color={colors.white} >
                 Logout
               </Text>
+              
             </TouchableOpacity>
           </Card>
         </YStack>

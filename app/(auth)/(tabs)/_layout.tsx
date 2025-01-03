@@ -39,6 +39,14 @@ export default function TabLayout() {
           tabBarIcon: ({color}) => <FontAwesome name="user-md" size={24} color={color} />
         }}
       />
+            <Tabs.Screen
+        name="(patient)"
+        options={{
+          headerShown: false,
+          tabBarLabel: 'Add patient',
+          tabBarIcon: ({color}) => <FontAwesome name="user-md" size={24} color={color} />
+        }}
+      />
     </Tabs>
   );
 }

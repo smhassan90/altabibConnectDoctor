@@ -125,13 +125,13 @@ const LoginCard = () => {
       <Card borderRadius={10} width={'100%'} padding={10} backgroundColor={colors.lightGray}>
         <YStack gap={20}>
           <XStack backgroundColor={colors.white} borderRadius={5} padding={10} gap={10}>
-            <AntDesign name="phone" size={24} color={colors.primary} />
+            <AntDesign name="profile" size={24} color={colors.primary} />
             <Separator vertical borderColor={'lightgray'} />
             <TextInput
               value={num}
-              maxLength={11}
+              maxLength={20}
               style={{ padding: 0, flex: 1, fontFamily: 'ArialB' }}
-              placeholder="Phone"
+              placeholder="Username or Phone"
               onChangeText={handleNumChange}
               placeholderTextColor="#808080a4"
             />
